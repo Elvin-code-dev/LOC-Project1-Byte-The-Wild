@@ -1,0 +1,24 @@
+{
+  "name": "loc1-project-byte-the-wild",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elvin-code-dev/LOC-Project-Byte-The-Wild.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elvin-code-dev/LOC-Project-Byte-The-Wild/issues"
+  },
+  "homepage": "https://github.com/Elvin-code-dev/LOC-Project-Byte-The-Wild#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

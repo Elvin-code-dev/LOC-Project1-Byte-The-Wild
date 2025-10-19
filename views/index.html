@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOC Project</title>
+  <!-- link to JavaScript file -->
+  <script src="/script.js" defer></script>
+  <!-- link to CSS file -->
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Division Management</h1>
+    <p class="sub">Learning Outcomes Committee</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <label for="divisionSelect" class="label">Select a Division</label>
+      <select id="divisionSelect" class="select">
+        <option value="">-- Choose a division --</option>
+      </select>
+    </section>
+
+    <form id="divisionForm" class="card hidden">
+      <h2 class="card-title">Division Details</h2>
+
+      <div class="field">
+        <label for="divisionName">Division Name</label>
+        <input id="divisionName" type="text" />
+        <span id="err-divisionName" class="error hidden">Required</span>
+      </div>
+
+      <div class="field">
+        <label for="dean">Dean</label>
+        <input id="dean" type="text" />
+        <span id="err-dean" class="error hidden">Required</span>
+      </div>
+
+      <div class="field">
+        <label for="penContact">PEN Contact</label>
+        <input id="penContact" type="text" />
+        <span id="err-penContact" class="error hidden">Required</span>
+      </div>
+
+      <div class="field">
+        <label for="locRep">LOC Rep</label>
+        <input id="locRep" type="text" />
+        <span id="err-locRep" class="error hidden">Required</span>
+      </div>
+
+      <div class="field">
+        <label for="chair">Chair</label>
+        <input id="chair" type="text" />
+        <span id="err-chair" class="error hidden">Required</span>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn primary">Save</button>
+        <button type="button" id="cancelBtn" class="btn">Cancel</button>
+      </div>
+
+      <p id="saveMsg" class="save-msg hidden">Saved ✓</p>
+    </form>
+  </main>
+</body>
+</html>
